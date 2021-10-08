@@ -1,6 +1,7 @@
 {
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:swamp": "2021-10-08 10:13:41 -0300",
       "minecraft:plains": "2021-10-07 17:19:30 -0300"
     },
     "done": false

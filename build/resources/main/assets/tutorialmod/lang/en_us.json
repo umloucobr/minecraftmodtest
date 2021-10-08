@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.amethyst": "Amethyst",
 
-  "itemGroup.tutorialModTab": "Tutorial Mod"
+  "itemGroup.tutorialModTab": "Tutorial Mod",
+
+  "block.tutorialmod.amethyst_ore": "Amethyst Ore"
 }
