@@ -3,5 +3,11 @@
 
   "itemGroup.tutorialModTab": "Tutorial Mod",
 
-  "block.tutorialmod.amethyst_ore": "Amethyst Ore"
+  "block.tutorialmod.amethyst_ore": "Amethyst Ore",
+
+  "block.tutorialmod.amethyst_block": "Amethyst Block",
+
+  "item.tutorialmod.firestone": "Fire Stone",
+
+  "block.tutorialmod.firestone_block": "Fire Stone Block"
 }

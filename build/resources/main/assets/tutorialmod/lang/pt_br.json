@@ -3,5 +3,11 @@
 
   "itemGroup.tutorialModTab": "Mod de Tutorial",
 
-  "block.tutorialmod.amethyst_ore": "Minério de Ametista"
+  "block.tutorialmod.amethyst_ore": "Minério de Ametista",
+
+  "block.tutorialmod.amethyst_block": "Bloco de Ametista",
+
+  "item.tutorialmod.firestone": "Pedra de Fogo",
+
+  "block.tutorialmod.firestone_block": "Bloco de Pedra de Fogo"
 }
