@@ -9,5 +9,11 @@
 
   "item.tutorialmod.firestone": "Pedra de Fogo",
 
-  "block.tutorialmod.firestone_block": "Bloco de Pedra de Fogo"
+  "block.tutorialmod.firestone_block": "Bloco de Pedra de Fogo",
+
+  "tooltip.tutorialmod.firestone": "Segure \u00A7eSHIFT\u00A7r para mais informações!",
+
+  "tooltip.tutorialmod.firestone_shift": "Este item talvez te incendiará com fogo, e, talvez te protegerá dele!",
+
+  "block.tutorialmod.amethyst_stairs": "Escadas de Ametista"
 }

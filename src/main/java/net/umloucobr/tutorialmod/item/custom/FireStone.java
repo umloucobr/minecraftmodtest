@@ -3,6 +3,8 @@ package net.umloucobr.tutorialmod.item.custom;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -14,8 +16,13 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.umloucobr.tutorialmod.util.TutorialTags;
 
+import javax.annotation.Nullable;
+import java.util.List;
 import java.util.Objects;
 
 public class FireStone extends Item {
@@ -38,6 +45,17 @@ public class FireStone extends Item {
         return super.onItemUseFirst(stack, context);
     }
 
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+
+        if(Screen.hasShiftDown()) {
+            tooltip.add(new TranslationTextComponent("tooltip.tutorialmod.firestone_shift"));
+        } else {
+            tooltip.add(new TranslationTextComponent("tooltip.tutorialmod.firestone"));
+        }
+        super.addInformation(stack, worldIn, tooltip, flagIn);
+    }
+
     private void rightClickOnCertainBlockState(BlockState blockClicked, ItemUseContext context, PlayerEntity playerEntity) {
         boolean playerIsNotOnFire = !playerEntity.isBurning();
 
@@ -51,8 +69,8 @@ public class FireStone extends Item {
         }
     }
 
-    private boolean blockIsValidForResistance(BlockState state) {
-        return state == Blocks.OBSIDIAN.getDefaultState();
+    private boolean blockIsValidForResistance(BlockState clickedBlock) {
+        return clickedBlock.isIn(TutorialTags.Blocks.FIRESTONE_CLICKABLE_BLOCKS);
     }
 
     private void gainFireResistanceAndDestroyBlock(PlayerEntity playerEntity, World world, BlockPos pos) {

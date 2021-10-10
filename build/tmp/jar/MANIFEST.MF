@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Implementation-Title: Example Mod 1
+Implementation-Title: minecraftmodtest
 Implementation-Version: 1.16.5-1.0
 Specification-Vendor: tutorialmodsareus
 Specification-Title: tutorialmod
-Implementation-Timestamp: 2021-10-08T10:28:27-0300
+Implementation-Timestamp: 2021-10-10T17:06:57-0300
 Specification-Version: 1
 Implementation-Vendor: tutorialmodsareus
 

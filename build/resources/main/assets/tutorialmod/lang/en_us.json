@@ -9,5 +9,11 @@
 
   "item.tutorialmod.firestone": "Fire Stone",
 
-  "block.tutorialmod.firestone_block": "Fire Stone Block"
+  "block.tutorialmod.firestone_block": "Fire Stone Block",
+
+  "tooltip.tutorialmod.firestone": "Hold \u00A7eSHIFT\u00A7r for more Information!",
+
+  "tooltip.tutorialmod.firestone_shift": "Might set you on fire. But also might protect from it!",
+
+  "block.tutorialmod.amethyst_stairs": "Amethyst Stairs"
 }

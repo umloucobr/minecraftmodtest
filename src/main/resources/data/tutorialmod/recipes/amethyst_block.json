@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "S#S",
-    "#S#",
-    "S#S"
+    "###",
+    "###",
+    "###"
   ],
   "key": {
     "#": [
       {
-        "item": "tutorialmod:amethyst"
+        "tag": "forge:gems/amethyst"
       }
-    ],
-    "S": {
-      "item": "minecraft:stone"
-    }
+    ]
   },
   "result": {
     "item": "tutorialmod:amethyst_block"

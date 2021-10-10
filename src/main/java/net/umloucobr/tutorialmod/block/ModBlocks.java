@@ -2,6 +2,7 @@ package net.umloucobr.tutorialmod.block;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.umloucobr.tutorialmod.TutorialMod;
+import net.umloucobr.tutorialmod.block.custom.FireStoneBlock;
 import net.umloucobr.tutorialmod.item.ModItemGroup;
 import net.umloucobr.tutorialmod.item.ModItems;
 
@@ -26,6 +28,16 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> AMETHYST_BLOCK = registerBlock("amethyst_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> FIRESTONE_BLOCK = registerBlock("firestone_block",
+            () -> new FireStoneBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2).hardnessAndResistance(6f).harvestTool(ToolType.PICKAXE).setRequiresTool()));
+
+    public static final RegistryObject<Block> AMETHYST_STAIRS = registerBlock("amethyst_stairs",
+            () -> new StairsBlock( () -> AMETHYST_BLOCK.get().getDefaultState(),
+                    AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE).hardnessAndResistance(8f)));
+
+
 
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
