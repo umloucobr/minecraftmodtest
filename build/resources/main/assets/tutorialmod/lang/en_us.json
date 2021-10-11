@@ -15,5 +15,9 @@
 
   "tooltip.tutorialmod.firestone_shift": "Might set you on fire. But also might protect from it!",
 
-  "block.tutorialmod.amethyst_stairs": "Amethyst Stairs"
+  "block.tutorialmod.amethyst_stairs": "Amethyst Stairs",
+
+  "block.tutorialmod.amethyst_fence": "Amethyst Fences",
+
+  "block.tutorialmod.amethyst_fence_gate": "Amethyst Fences Gates"
 }

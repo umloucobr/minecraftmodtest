@@ -15,5 +15,9 @@
 
   "tooltip.tutorialmod.firestone_shift": "Este item talvez te incendiará com fogo, e, talvez te protegerá dele!",
 
-  "block.tutorialmod.amethyst_stairs": "Escadas de Ametista"
+  "block.tutorialmod.amethyst_stairs": "Escadas de Ametista",
+
+  "block.tutorialmod.amethyst_fence": "Cerca de Ametista",
+
+  "block.tutorialmod.amethyst_fence_gate": "Portão de Cerca de Ametista"
 }
