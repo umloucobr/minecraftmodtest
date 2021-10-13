@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "tag": "forge:gems/amethyst"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:amethyst_button"
+  }
+}

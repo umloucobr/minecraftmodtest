@@ -43,7 +43,25 @@ public class ModBlocks {
             () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(2).hardnessAndResistance(6f).harvestTool(ToolType.AXE).setRequiresTool()));
 
+    public static final RegistryObject<Block> AMETHYST_SLAB = registerBlock("amethyst_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2).hardnessAndResistance(6f).harvestTool(ToolType.PICKAXE).setRequiresTool()));
 
+    public static final RegistryObject<Block> AMETHYST_BUTTON = registerBlock("amethyst_button",
+            () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2).hardnessAndResistance(6f).harvestTool(ToolType.PICKAXE).setRequiresTool().doesNotBlockMovement()));
+
+    public static final RegistryObject<Block> AMETHYST_PRESSURE_PLATE = registerBlock("amethyst_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(2).hardnessAndResistance(6f).harvestTool(ToolType.PICKAXE).setRequiresTool()));
+
+    public static final RegistryObject<Block> AMETHYST_DOOR = registerBlock("amethyst_door",
+            () -> new DoorBlock(AbstractBlock.Properties.create(Material.IRON).harvestLevel(2).setRequiresTool()
+                    .harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f).notSolid()));
+
+    public static final RegistryObject<Block> AMETHYST_TRAPDOOR = registerBlock("amethyst_trapdoor",
+            () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.IRON).harvestLevel(2).setRequiresTool()
+                    .harvestTool(ToolType.PICKAXE).hardnessAndResistance(6f).notSolid()));
 
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
