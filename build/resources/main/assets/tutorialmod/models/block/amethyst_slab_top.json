@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "tutorialmod:block/amethyst_block",
-    "top": "tutorialmod:block/amethyst_block",
-    "side": "tutorialmod:block/amethyst_block"
-  }
-}

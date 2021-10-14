@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: minecraftmodtest
-Implementation-Version: 1.16.5-1.0
-Specification-Vendor: tutorialmodsareus
-Specification-Title: tutorialmod
-Implementation-Timestamp: 2021-10-12T22:12:12-0300
-Specification-Version: 1
-Implementation-Vendor: tutorialmodsareus
-

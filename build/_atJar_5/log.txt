@@ -1,7 +1,0 @@
-Java Launcher: C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin\java.exe
-Arguments: '--inJar, C:\Users\maria\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.0\forge-1.16.5-36.2.0-injected.jar, --outJar, C:\Users\maria\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5\forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5.jar, --logFile, accesstransform.log, --atFile, C:\Users\maria\Desktop\Minecraft Mods\Example Mod 1\build\_atJar_5\parent_at.cfg'
-Classpath:
- - C:\Users\maria\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\3.0.1\accesstransformers-3.0.1-fatjar.jar
-Working directory: C:\Users\maria\Desktop\Minecraft Mods\Example Mod 1\build\_atJar_5
-Main class: net.minecraftforge.accesstransformer.TransformerProcessor
-====================================
