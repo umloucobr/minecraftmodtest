@@ -47,5 +47,17 @@
 
   "block.tutorialmod.amethyst_door": "Porta de Ametista",
 
-  "block.tutorialmod.amethyst_trapdoor": "Alçapão de Ametista"
+  "block.tutorialmod.amethyst_trapdoor": "Alçapão de Ametista",
+
+  "block.tutorialmod.oats_crop": "Aveia",
+
+  "block.tutorialmod.redwood_log": "Tronco de Madeira Vermelha",
+
+  "block.tutorialmod.redwood_planks": "Tábua de Madeira Vermelha",
+
+  "block.tutorialmod.redwood_wood": "Casca de Madeira Vermelha",
+
+  "block.tutorialmod.stripped_redwood_log": "Tronco Descascada de Madeira Vermelha",
+
+  "block.tutorialmod.stripped_redwood_wood": "Casca Descascada de Madeira Vermelha"
 }

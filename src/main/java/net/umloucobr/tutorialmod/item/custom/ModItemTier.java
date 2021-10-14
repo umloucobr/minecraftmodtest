@@ -1,4 +1,4 @@
-package net.umloucobr.tutorialmod.item;
+package net.umloucobr.tutorialmod.item.custom;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;

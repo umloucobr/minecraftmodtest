@@ -6,6 +6,8 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 
+import static net.umloucobr.tutorialmod.item.custom.FireStone.lightEntityOnFire;
+
 
 public class SwordEffects extends SwordItem {
 
@@ -15,13 +17,8 @@ public class SwordEffects extends SwordItem {
 
     @Override
     public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        lightEntityOnFire(target, 6);
+        lightEntityOnFire(target, 3);
         return true;
     }
-
-    private static void lightEntityOnFire(Entity entity, int duration) {
-        entity.setFire(duration);
-    }
 }
-
 
