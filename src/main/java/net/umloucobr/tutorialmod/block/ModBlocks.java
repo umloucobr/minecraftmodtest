@@ -12,6 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.umloucobr.tutorialmod.TutorialMod;
 import net.umloucobr.tutorialmod.block.custom.FireStoneBlock;
 import net.umloucobr.tutorialmod.block.custom.OatsBlock;
+import net.umloucobr.tutorialmod.block.custom.trees.RedwoodTree;
 import net.umloucobr.tutorialmod.item.custom.ModItemGroup;
 import net.umloucobr.tutorialmod.item.custom.ModItems;
 
@@ -81,6 +82,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> REDWOOD_PLANKS = registerBlock("redwood_planks",
             () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("redwood_leaves",
+            () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f)
+                    .tickRandomly().sound(SoundType.PLANT).notSolid()));
+
+    public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling",
+            () -> new SaplingBlock(new RedwoodTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
 
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

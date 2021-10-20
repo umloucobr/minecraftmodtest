@@ -59,5 +59,9 @@
 
   "block.tutorialmod.stripped_redwood_log": "Tronco Descascada de Madeira Vermelha",
 
-  "block.tutorialmod.stripped_redwood_wood": "Casca Descascada de Madeira Vermelha"
+  "block.tutorialmod.stripped_redwood_wood": "Casca Descascada de Madeira Vermelha",
+
+  "block.tutorialmod.redwood_sapling": "Muda de Madeira Vermelha",
+
+  "block.tutorialmod.redwood_leaves": "Folhas de Madeira Vermelha"
 }
