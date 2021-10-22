@@ -2,6 +2,7 @@ package net.umloucobr.tutorialmod.item.custom;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.umloucobr.tutorialmod.item.ModItems;
 
 public class ModItemGroup {
 

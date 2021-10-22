@@ -2,7 +2,6 @@ package net.umloucobr.tutorialmod.item.custom;
 
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
@@ -54,6 +53,19 @@ public class FireStone extends Item {
             tooltip.add(new TranslationTextComponent("tooltip.tutorialmod.firestone"));
         }
         super.addInformation(stack, worldIn, tooltip, flagIn);
+    }
+    @Override
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        ItemStack container = itemStack.copy();
+        if(container.attemptDamageItem(1, random, null)) {
+            return ItemStack.EMPTY;
+        } else {
+            return container;
+        }
+    }
+    @Override
+    public boolean hasContainerItem(ItemStack stack) {
+        return true;
     }
 
     private void rightClickOnCertainBlockState(BlockState blockClicked, ItemUseContext context, PlayerEntity playerEntity) {

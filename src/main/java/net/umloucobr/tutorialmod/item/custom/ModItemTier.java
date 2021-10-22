@@ -3,6 +3,7 @@ package net.umloucobr.tutorialmod.item.custom;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
+import net.umloucobr.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
 

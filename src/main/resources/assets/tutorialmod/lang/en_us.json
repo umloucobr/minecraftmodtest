@@ -63,5 +63,13 @@
 
   "block.tutorialmod.redwood_sapling": "Redwood Sapling",
 
-  "block.tutorialmod.redwood_leaves": "Redwood Leaves"
+  "block.tutorialmod.redwood_leaves": "Redwood Leaves",
+
+  "item.tutorialmod.amethyst_horse_armor": "Amethyst Horse Armor",
+
+  "block.tutorialmod.hyacinth": "Hyacinth",
+
+  "block.tutorialmod.lightning_channeler": "Lightning Channeler",
+
+  "screen.tutorialmod.lightning_channeler": "Lightning Channeler"
 }

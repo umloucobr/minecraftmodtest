@@ -4,6 +4,7 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -11,10 +12,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.umloucobr.tutorialmod.TutorialMod;
 import net.umloucobr.tutorialmod.block.custom.FireStoneBlock;
+import net.umloucobr.tutorialmod.block.custom.LightningChannelerBlock;
 import net.umloucobr.tutorialmod.block.custom.OatsBlock;
 import net.umloucobr.tutorialmod.block.custom.trees.RedwoodTree;
+import net.umloucobr.tutorialmod.item.ModItems;
 import net.umloucobr.tutorialmod.item.custom.ModItemGroup;
-import net.umloucobr.tutorialmod.item.custom.ModItems;
 
 import java.util.function.Supplier;
 
@@ -90,6 +92,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling",
             () -> new SaplingBlock(new RedwoodTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> HYACINTH = registerBlock("hyacinth",
+            () -> new FlowerBlock(Effects.HASTE, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> LIGHTNING_CHANNELER = registerBlock("lightning_channeler",
+            () -> new LightningChannelerBlock(AbstractBlock.Properties.create(Material.IRON)));
+
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
@@ -104,6 +112,4 @@ public class ModBlocks {
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
-
-
 }

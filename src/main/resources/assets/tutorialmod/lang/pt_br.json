@@ -63,5 +63,13 @@
 
   "block.tutorialmod.redwood_sapling": "Muda de Madeira Vermelha",
 
-  "block.tutorialmod.redwood_leaves": "Folhas de Madeira Vermelha"
+  "block.tutorialmod.redwood_leaves": "Folhas de Madeira Vermelha",
+
+  "item.tutorialmod.amethyst_horse_armor": "Armadura de Cavalo de Ametista",
+
+  "block.tutorialmod.hyacinth": "Jacinto",
+
+  "block.tutorialmod.lightning_channeler": "Canalizador de Raios",
+
+  "screen.tutorialmod.lightning_channeler": "Canalizador de Raios"
 }

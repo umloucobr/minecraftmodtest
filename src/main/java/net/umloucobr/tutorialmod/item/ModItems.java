@@ -1,4 +1,4 @@
-package net.umloucobr.tutorialmod.item.custom;
+package net.umloucobr.tutorialmod.item;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.umloucobr.tutorialmod.TutorialMod;
 import net.umloucobr.tutorialmod.block.ModBlocks;
+import net.umloucobr.tutorialmod.item.custom.*;
 
 
 public class ModItems {
@@ -38,7 +39,7 @@ public class ModItems {
                     new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
 
     public static final RegistryObject<Item> AMETHYST_HOE = ITEMS.register("amethyst_hoe",
-            () -> new HoeItem(ModItemTier.AMETHYST, 0, 0.0f,
+            () -> new HoeItem(ModItemTier.AMETHYST, 0, -3.0f,
                     new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
 
     public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register("amethyst_helmet",
@@ -62,8 +63,11 @@ public class ModItems {
                     .food(new Food.Builder().hunger(1).saturation(0.1f).fastToEat().build())
                     .group(ModItemGroup.TUTORIAL_GROUP)));
 
+    public static final RegistryObject<Item> AMETHYST_HORSE_ARMOR = ITEMS.register("amethyst_horse_armor",
+            () -> new HorseArmorItem(9, "amethyst",
+                    new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
-
 }

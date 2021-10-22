@@ -9,6 +9,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.umloucobr.tutorialmod.TutorialMod;
+import net.umloucobr.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
 

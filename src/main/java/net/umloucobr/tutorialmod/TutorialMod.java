@@ -2,7 +2,7 @@ package net.umloucobr.tutorialmod;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.AxeItem;
@@ -19,7 +19,10 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.umloucobr.tutorialmod.block.ModBlocks;
-import net.umloucobr.tutorialmod.item.custom.ModItems;
+import net.umloucobr.tutorialmod.container.ModContainers;
+import net.umloucobr.tutorialmod.item.ModItems;
+import net.umloucobr.tutorialmod.screen.LightningChannelerScreen;
+import net.umloucobr.tutorialmod.tileentity.ModTileEntities;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -40,6 +43,8 @@ public class TutorialMod
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModTileEntities.register(eventBus);
+        ModContainers.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -69,8 +74,11 @@ public class TutorialMod
             RenderTypeLookup.setRenderLayer(ModBlocks.OATS.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_LEAVES.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.HYACINTH.get(), RenderType.getCutout());
+            ScreenManager.registerFactory(ModContainers.LIGHTNING_CHANNELER_CONTAINER.get(),
+                    LightningChannelerScreen::new);
 
-        //RenderTypeLookup.setRenderLayer(ModBlocks.OATS.get(), RenderType.getCutout());
+            //RenderTypeLookup.setRenderLayer(ModBlocks.OATS.get(), RenderType.getCutout());
         });
     }
 
